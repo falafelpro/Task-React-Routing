@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <div>
       <Link to="/">Home</Link>
-      <Link to="/productList">Products List</Link>
+      <Link to="/productList">Products List</Link>{" "}
     </div>
   );
 }

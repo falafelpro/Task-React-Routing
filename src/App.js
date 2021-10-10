@@ -8,13 +8,18 @@ import ProductList from "./components/ProductList";
 import "./App.css";
 import Detail from "./components/Detail";
 
+import products from "./products";
+
 function App() {
   return (
     <div>
       <NavBar />
       <Switch>
         <Route exact path="/productList">
-          <ProductList />
+          <ProductList products={products} />
+        </Route>
+        <Route exact path="/detail/:id">
+          <Detail products={products} />
         </Route>
         <Route exact path="/">
           <Home />
